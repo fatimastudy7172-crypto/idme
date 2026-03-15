@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blueprint: Integrating IDME with KPM</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #eaeaea; 
+            padding-bottom: 10px; 
+        }
+        h2 { 
+            color: #34495e; 
+            margin-top: 30px; 
+        }
+        h3 {
+            color: #4a5568;
+        }
+        blockquote { 
+            border-left: 4px solid #007bff; 
+            margin: 20px 0; 
+            background: #f8f9fa; 
+            padding: 15px 20px; 
+            font-style: italic;
+            border-radius: 0 5px 5px 0;
+        }
+        ul { 
+            margin-bottom: 20px; 
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a { 
+            color: #007bff; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        a:hover { 
+            text-decoration: underline; 
+        }
+        .badge { 
+            display: inline-block; 
+            padding: 5px 12px; 
+            margin-right: 8px; 
+            border-radius: 20px; 
+            font-size: 0.85em; 
+            font-weight: bold; 
+        }
+        .badge-blue { 
+            background: #e1f0fe; 
+            color: #0056b3; 
+        }
+        .badge-purple { 
+            background: #f3e8ff; 
+            color: #6f42c1; 
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>🔐 The Blueprint: Integrating IDME with KPM for Scalable Security</h1>
+
+        <div>
+            <span class="badge badge-blue">Topic: Identity Management</span>
+            <span class="badge badge-purple">Focus: KPM Protocols</span>
+        </div>
+
+        <blockquote>
+            <strong>Abstract:</strong> As organizations scale, managing digital identities becomes a massive operational bottleneck. This guide explores the critical intersection of <strong>Identity Management (IDME)</strong> and <strong>Key Process Management (KPM)</strong>, detailing how process-driven guardrails can harden your security perimeter.
+        </blockquote>
+
+        <h2>1. The Identity Dilemma</h2>
+        <p>Modern infrastructure teams often rely purely on their software to manage the lifecycle of an identity. However, without a structural process layer, systems suffer from:</p>
+        <ul>
+            <li><strong>Permission Bloat:</strong> Users retaining access long after a project ends.</li>
+            <li><strong>Audit Blindspots:</strong> Inability to trace <em>why</em> a specific permission was granted.</li>
+            <li><strong>Onboarding Latency:</strong> Delays in getting new hires the correct access safely.</li>
+        </ul>
+
+        <h2>2. What is the KPM Layer?</h2>
+        <p><strong>Key Process Management (KPM)</strong> acts as the structural guardrail for your IDME framework. It shifts the focus from managing <em>users</em> to managing the <em>processes</em> those users need to complete.</p>
+        <p>If a step in the KPM flow isn't checked off, the IDME system physically cannot grant the permission.</p>
+
+        <h2>3. Core Integration Strategies</h2>
+        <p>Integrating these two frameworks requires a strategic mapping process. Here are three steps to operationalize this approach:</p>
+
+        <h3>🛠️ A. Map the Lifecycle to a Process Tree</h3>
+        <p>Instead of arbitrarily assigning roles, map out every trigger event (onboarding, role change, offboarding) as a strict process flow.</p>
+
+        <h3>🛡️ B. Automate "Ghost Permission" Removal</h3>
+        <p>Tie identity directly to active processes. Set up automation so that if a project process is marked "Complete" in the KPM layer, the associated temporary IDME permissions are instantly revoked.</p>
+
+        <h3>📊 C. Standardize the Audit Trail</h3>
+        <p>KPM forces a standardized logging format. When security asks why someone has access, your logs should show the exact KPM process ticket that required it, not just the admin who approved it.</p>
+
+        <h2>4. Further Reading & Resources</h2>
+        <p>Optimizing this integration requires deep technical alignment between your HR systems, Active Directory, and process management tools. For a complete, step-by-step technical breakdown, you can read the <a href="https://idme-kpm.my/" target="_blank">idem benithet</a>.</p>
+    </article>
+</body>
+</html>
